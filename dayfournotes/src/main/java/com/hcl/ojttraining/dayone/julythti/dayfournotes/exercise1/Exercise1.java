@@ -51,7 +51,7 @@ public class Exercise1 {
 	}
 
 	public HashMap<Integer, Integer> checkOccur(int[] temp, HashMap<Integer, Integer> tempH) {
-		// checks the number of occurences
+		// checks the number of occurrences
 		for (Integer i : temp) {
 			if (tempH.containsKey(i)) {
 				tempH.put(i, tempH.get(i) + 1);
@@ -63,7 +63,7 @@ public class Exercise1 {
 	}
 
 	public HashSet<Integer> checkEqual(HashMap<Integer, Integer> tempH, HashSet<Integer> tempS) {
-		// if the number of occurences match the skill than add to the set
+		// if the number of occurrences match the skill than add to the set
 		for (Map.Entry<Integer, Integer> entry : tempH.entrySet()) {
 			if (entry.getKey() == entry.getValue()) {
 				tempS.add(entry.getKey());
